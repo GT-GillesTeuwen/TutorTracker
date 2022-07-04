@@ -1,0 +1,289 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 May 2020, 2:20:10 PM
+    Author     : Client
+*/
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+* {  
+    -fx-fldColour: #aebac2;
+    -fx-fldTextColour: #000000;
+
+    -fx-bgColour: #314252;  
+    -fx-bg2Colour:#1A2028;
+
+    -fx-altColour:#314252;
+    -fx-altColour2:#CE7801;
+    -fx-altColourDark:#b06702;
+    
+    -fx-colourGrad:linear-gradient(rgba(49,66,82,1) 0%, rgba(26,32,40,1) 100%);
+
+    -fx-btnColour:#CE7801;
+    -fx-btnTextColour:#FFFFFF;
+
+    -fx-borderColour:transparent;
+
+    -fx-tabBorderColour:#5D6167;
+    -fx-tabTextColor:#FFFFFF;
+    -fx-tabColour:#1E272C;
+
+    -fx-profileTextColour:#FFFFFF;
+}
+
+
+.ttl .label{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.ttl{
+    -fx-alignment: CENTER_RIGHT;
+     
+}
+.head .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+
+
+.txtField {
+
+    -fx-background-color: -fx-fldColour;
+    -fx-text-box-border: -fx-borderColour;
+    -fx-text-fill: -fx-fldTextColour;
+}
+
+
+
+.btn {
+
+    -fx-background-color: -fx-btnColour;
+    -fx-text-box-border: -fx-borderColour;
+    -fx-text-fill: -fx-btnTextColour
+}
+.btn:hover{
+     -fx-background-color: -fx-altColourDark;
+}
+
+
+
+.label{
+    -fx-text-fill: -fx-profileTextColour;
+}
+
+
+
+.textArea{
+    text-area-background: -fx-FldColour ;
+}
+.textArea .content {
+    -fx-background-color: text-area-background ;
+}
+
+
+
+.spinner .text-field {
+    -fx-background-color: -fx-fldColour;
+}
+
+
+
+.comboBox {
+    -fx-border-color: -fx-borderColour;
+    -fx-border-width: 0
+}
+.comboBox .text-field{
+    -fx-control-inner-background: -fx-fldColour ;
+}
+
+
+
+.datePicker .text-field {
+    -fx-control-inner-background: -fx-fldColour ;
+}
+
+
+
+.bg{
+    -fx-background-color:-fx-bgColour;
+}
+.bg2{
+    -fx-background-color:-fx-bg2Colour;
+}
+.contextBg{
+    -fx-background-color:-fx-bg2Colour;
+}
+
+
+
+.menu-bar{
+    -fx-background-color:-fx-altColour2;
+    -fx-border-color: -fx-borderColour;
+    -fx-text-fill: -fx-profileTextColour;
+}
+.menu{
+    -fx-text-fill: -fx-profileTextColour;
+    -fx-background-color:-fx-altColour2;
+}
+.menu .label{
+    -fx-text-fill: -fx-profileTextColour;
+
+}
+.menu-item{
+    
+    -fx-text-fill: -fx-profileTextColour;
+}
+.menu-item .label{
+    
+    -fx-text-fill: -fx-profileTextColour;
+}
+.context-menu{
+   -fx-skin: "com.sun.javafx.scene.control.skin.ContextMenuSkin";
+    -fx-background-color:-fx-altColour2 ;
+    -fx-border-width: 0.2px;
+    -fx-border-color: black;
+    
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background-color: -fx-altColourDark ;
+    -fx-text-fill: white;
+}
+.menu-item:hover{
+    -fx-background-color: -fx-altColourDark ;
+    -fx-text-fill: Green;
+}
+
+
+
+.toolbar{
+    -fx-background-color:-fx-altColour;
+    -fx-border-color: -fx-borderColour;
+}
+.toolbar2{
+    -fx-background-color:-fx-altColour2;
+    -fx-text-fill: -fx-profileTextColour;
+    -fx-border-color: -fx-borderColour;
+}
+
+
+
+.check-box .box {
+
+    -fx-background-color: -fx-fldColour;
+    -fx-border-color:-fx-borderColour;
+    -fx-border-radius:3px; 
+
+}
+
+
+.tab{
+    -fx-background-color: -fx-tabColour;
+    -fx-border-color:-fx-tabBorderColour;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: -fx-altColour;
+}
+
+.tab-label {
+    -fx-text-fill: -fx-tabTextColor ;
+}
+
+
+
+.profileFld{
+    -fx-text-fill: -fx-profileTextColour;
+}
+
+
+
+.mytree .tree-cell{
+    -fx-background-color: -fx-bg2Colour;
+    -fx-text-fill: #ffffff ;
+
+}
+.mytree .tree-cell:hover{
+     -fx-background-color: linear-gradient(from 40% 0% to 100% 100%, -fx-bgColour, -fx-bg2Colour);
+     -fx-text-fill: #ffffff ;
+}
+.tree-view {
+    -fx-skin: "com.sun.javafx.scene.control.skin.TreeViewSkin";
+    -fx-background-color: transparent, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+
+    /* There is some oddness if padding is in em values rather than pixels,
+       in particular, the left border of the control doesn't show. */
+    -fx-padding: 1; /* 0.083333em; */
+}
+.tree-cell > .tree-disclosure-node > .arrow  {
+    -fx-background-color: #C4C4C4;
+}
+
+
+
+.axis {   
+    -fx-tick-label-fill: -fx-profileTextColour;
+}
+.axis-tick-mark {
+    -fx-stroke: -fx-profileTextColour;
+}
+.axis-minor-tick-mark {
+    -fx-stroke: -fx-profileTextColour;
+}
+.chart-legend-item{
+    -fx-text-fill: -fx-fldTextColour;
+}
+
+.chart-bar {
+   
+}
+
+
+
+
+
+.Payment .label{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.Payment{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.Balance .label{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.Balance{
+    -fx-alignment: CENTER_RIGHT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.Account .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.Surname .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.AccountDate .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.MedicalAid .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+.datePicker .label{
+    -fx-alignment: CENTER_LEFT;
+    -fx-text-fill: -fx-fldTextColour;
+}
+
